@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation inheritance and polymorphism", "Encapsulation, inheritance and polymorphism\Encapsulation inheritance and polymorphism.csproj", "{ADF106D8-22CD-4158-8208-A52FEF64B23C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADF106D8-22CD-4158-8208-A52FEF64B23C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF106D8-22CD-4158-8208-A52FEF64B23C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF106D8-22CD-4158-8208-A52FEF64B23C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF106D8-22CD-4158-8208-A52FEF64B23C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAFA9473-AEFF-4C04-8F8B-38888F3403AF}
+	EndGlobalSection
+EndGlobal
