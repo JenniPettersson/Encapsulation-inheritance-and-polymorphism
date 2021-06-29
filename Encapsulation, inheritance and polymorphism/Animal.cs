@@ -21,7 +21,7 @@ namespace Encapsulation_inheritance_and_polymorphism
             Age = age;
             Weight = weight;
         }
-        public abstract string DoSound(string sound);
+        public abstract string DoSound();
 
         public virtual string Stats()
         {
@@ -42,11 +42,9 @@ namespace Encapsulation_inheritance_and_polymorphism
             Color = color;
         }
 
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return  "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -67,11 +65,9 @@ namespace Encapsulation_inheritance_and_polymorphism
             FurColor = furcolor;
         }
 
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -79,6 +75,10 @@ namespace Encapsulation_inheritance_and_polymorphism
             return $"{base.Stats()}, pälsfärg: {FurColor}";
         }
 
+        public string MyDogMethod()
+        {
+            return "Valfri Dog-sträng";
+        }
     }
 
     class Hedgehog : Animal
@@ -92,11 +92,9 @@ namespace Encapsulation_inheritance_and_polymorphism
             NrOfSpikes = nrofspikes;
         }
 
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -115,11 +113,9 @@ namespace Encapsulation_inheritance_and_polymorphism
         {
             Lenght = lenght;
         }
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -140,11 +136,9 @@ namespace Encapsulation_inheritance_and_polymorphism
         {
             WingSpan = wingspan;
         }
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -164,11 +158,9 @@ namespace Encapsulation_inheritance_and_polymorphism
         {
             Country = country;
         }
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -188,11 +180,9 @@ namespace Encapsulation_inheritance_and_polymorphism
             SizeOfBeak = sizeofbeak;
         }
 
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -213,11 +203,9 @@ namespace Encapsulation_inheritance_and_polymorphism
             Height = height;
         }
 
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -236,11 +224,9 @@ namespace Encapsulation_inheritance_and_polymorphism
         {
             Companion = companion;
         }
-        public override string DoSound(string sound)
+        public override string DoSound()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Sound of this animal: {sound}");
-            return "Djurets läte";
+            return sound;
         }
 
         public override string Stats()
@@ -263,11 +249,9 @@ namespace Encapsulation_inheritance_and_polymorphism
         {
         return $"{base.Stats()}, antal klor: {NrOfClaws}";
         }
-        public string Talk(string VoiceMessage)
+        public string Talk()
         {
-            SpeechSynthesizer synth = new SpeechSynthesizer();
-            synth.Speak($"Wolfman säger: {VoiceMessage}");
-            return "Vad säger Wolfman";
+            return VoiceMessage;
         }
 
     }

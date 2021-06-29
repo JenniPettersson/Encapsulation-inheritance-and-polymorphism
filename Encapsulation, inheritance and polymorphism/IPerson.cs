@@ -4,7 +4,7 @@ namespace Encapsulation_inheritance_and_polymorphism
 {
     interface IPerson
     {
-        public string Talk(string VoiceMessage);           
+        public string Talk();           
     }
 
 }
